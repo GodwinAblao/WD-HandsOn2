@@ -56,10 +56,8 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project and purpose
+-The goal of this project is to create distinctive and eye-catching web elements for a cutting-edge user interface. In order to improve user experience, boost visual attractiveness, and give web designers a wide range of alternatives, a variety of static and animated hero and card designs have been created.
 
 ### Key Components
 <!-- The following are just sample -->
