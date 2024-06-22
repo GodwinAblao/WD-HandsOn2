@@ -1,0 +1,132 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(100%);
+}
+
+.card1 {
+    padding: 2rem;
+    width: 35dvw;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.2rem;
+    border: 1px solid rgba(245, 245, 245, 0.212);
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 20px;
+}
+
+.card1 .card-img {
+    position: absolute;
+    height: calc(100% - 4rem);
+    width: fit-content;
+    right: 2rem;
+    top: 2rem;
+    z-index: -1;
+}
+
+.card1 .title {
+    padding: 1rem 0;
+    border-bottom: 1px white solid;
+    width: fit-content;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    filter: invert(1);
+}
+
+.card1 .description {
+    padding: 1rem 0;
+    width: 65%;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    filter: invert(1);
+}
+
+.card1 i {
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 1024px) {
+    .card1 {
+        width: 60dvw;
+    }
+}
+
+/* New Card Styles */
+
+.card2 {
+    padding: 2rem;
+    width: 35dvw;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card2 .card-content {
+    z-index: 1;
+    position: relative;
+}
+
+.card2 .card-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+
+.card2:hover .card-img {
+    opacity: 0.1;
+}
+
+.card2 .title {
+    padding: 1rem 0;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.card2 .description {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media only screen and (max-width: 1024px) {
+    .card2 {
+        width: 60dvw;
+    }
+}
