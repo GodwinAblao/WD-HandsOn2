@@ -17,3 +17,79 @@ body {
     z-index: -1;
     filter: brightness(100%);
 }
+
+/* Styling for card3 (static card) */
+.card3 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card3 .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card3 .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.card3 .description {
+    color: #ffffff;
+}
+
+/* Styling for card4 (animated card) */
+.card4 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card4 .card-content {
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for placeholder */
+    position: relative;
+}
+
+.card4 .card-content .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card4 .card-content .description {
+    display: none; /* Hide description initially */
+}
+
+.card4 .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: -100%; /* Offset to reveal placeholder */
+    transition: margin-top 0.5s ease; /* Animation transition */
+    opacity: 0.5;
+}
+
+.card4:hover .card-img {
+    margin-top: 0; /* Reveals the image on hover */
+    opacity: 1.0;
+}
