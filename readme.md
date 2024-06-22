@@ -10,9 +10,9 @@
 
   <h3 align="center">Hands on 2: Hero & Card</h3>
 </div>
-<!-- TODO: Make a short description -->
+
 <div align="center">
-  Short Description. (Optional)
+  An animation and theme-based card and hero demonstration project.
 </div>
 
 <br />
@@ -52,8 +52,6 @@
 ---
 
 ## Overview
-
-<!-- TODO: To be changed -->
 <!-- The following are just sample -->
 Description of the project in details.
 
@@ -64,7 +62,6 @@ Guiding Question:
 - What technology used and how it is used
 
 ### Key Components
-<!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website/Single Page Website
 - Parallax transition
@@ -110,7 +107,12 @@ WD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+|Github|Get some ideas|https://github.com/zyx-0314/WD-Hands-on-2|
+|Leagueoflegends|Get some ideas|https://www.leagueoflegends.com/en-us/champions/|
+|Dev|Get some ideas|https://devdevout.com/css/css-cards?fbclid=IwZXh0bgNhZW0CMTAAAR1tU6bHFsFjr8kWs9tKvbG2jiyCB8s-DUmcvtVx8WUF7lAPV4xyfjNhd6A_aem_aXiQqmXOO8GCZ71zUDAitw#google_vignette|
+|CSS Card Hover Effects / HTML & CSS|Get some ideas|https://www.youtube.com/watch?v=Q8BamnhOmWc&list=PL07efmqYWHZ9Acr4QPiecaGKsekcL2zvc&index=1|
+|W3S|Get some ideas|https://www.w3schools.com/|
+|CodePen|Get some ideas|https://codepen.io/jurb1/pen/RRrZeg|
+
