@@ -115,4 +115,11 @@ WD-ProjectName
 |CSS Card Hover Effects / HTML & CSS|Get some ideas|https://www.youtube.com/watch?v=Q8BamnhOmWc&list=PL07efmqYWHZ9Acr4QPiecaGKsekcL2zvc&index=1|
 |W3S|Get some ideas|https://www.w3schools.com/|
 |CodePen|Get some ideas|https://codepen.io/jurb1/pen/RRrZeg|
+|How to create an Image Slider in HTML CSS and JavaScript Step by Step / Creative JS Coder.|Get some ideas|https://www.youtube.com/watch?v=OTjmnF27ADk&t=11s|
+|font awesome|Get some ideas|https://fontawesome.com/|
+|Google Font|Get some ideas|https://fonts.google.com/|
+|Bootstrap|Get some ideas|https://getbootstrap.com/|
+|Material UI|Get some ideas|https://mui.com/|
+|TailWind|Get some ideas|https://tailwindcss.com/|
+
 
