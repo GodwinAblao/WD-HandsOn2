@@ -1,0 +1,436 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(100%);
+}
+.card1 {
+    padding: 2rem;
+    width: 35dvw;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.2rem;
+    border: 1px solid rgba(245, 245, 245, 0.212);
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 20px;
+}
+
+.card1 .card-img {
+    position: absolute;
+    height: calc(100% - 4rem);
+    width: fit-content;
+    right: 2rem;
+    top: 2rem;
+    z-index: -1;
+}
+
+.card1 .title {
+    padding: 1rem 0;
+    border-bottom: 1px white solid;
+    width: fit-content;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    filter: invert(1);
+    color: black;
+}
+
+.card1 .description {
+    padding: 1rem 0;
+    width: 65%;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    filter: invert(1);
+    color: black;
+}
+
+.card1 i {
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 1024px) {
+    .card1 {
+        width: 60dvw;
+    }
+}
+
+/* New Card Styles */
+
+.card2 {
+    padding: 2rem;
+    width: 35dvw;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card2 .card-content {
+    z-index: 1;
+    position: relative;
+}
+
+.card2 .card-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+
+.card2:hover .card-img {
+    opacity: 0.1;
+}
+
+.card2 .title {
+    padding: 1rem 0;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.card2 .description {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media only screen and (max-width: 1024px) {
+    .card2 {
+        width: 60dvw;
+    }
+}
+/* Styling for card3 (static card) */
+.card3 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card3 .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card3 .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.card3 .description {
+    color: #ffffff;
+}
+
+/* Styling for card4 (animated card) */
+.card4 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card4 .card-content {
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for placeholder */
+    position: relative;
+}
+
+.card4 .card-content .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card4 .card-content .description {
+    display: none; /* Hide description initially */
+}
+
+.card4 .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: -100%; /* Offset to reveal placeholder */
+    transition: margin-top 0.5s ease; /* Animation transition */
+    opacity: 0.5;
+}
+
+.card4:hover .card-img {
+    margin-top: 0; /* Reveals the image on hover */
+    opacity: 1.0;
+}
+/* Styling for card5 */
+.card5 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card5 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card5 .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff00f2;
+    margin-bottom: 10px;
+}
+
+.card5 .description {
+    color: #e05ecf;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* Styling for card6 */
+.card6 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card6:hover {
+    transform: scale(1.05); /* Enlarges card on hover */
+}
+
+.card6 .card-content {
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.card6 .card-content .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff00f2;
+    margin-bottom: 10px;
+}
+
+.card6 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: transform 0.3s ease; /* Added for transform effect */
+}
+
+.card6:hover .card-img {
+    transform: scale(1.1); /* Enlarges image on hover */
+}
+/* Static card styles */
+.card7 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card7 .card-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card7 .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.card7 .description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+/* Animated card styles */
+.card8 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card8 .card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card8 .card-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card8:hover .card-img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card8 .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.card8 .description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Updated styles for .card9 and .card10 */
+
+.card9 {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card9 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card9 .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card9 .description {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card10 {
+    background-color: ;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+}
+
+.card10:hover {
+    transform: scale(1.05); /* Enlarges card on hover */
+}
+
+.card10 .card-content {
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.card10 .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card10 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: transform 0.3s ease; /* Added for transform effect */
+}
+
+.card10:hover .card-img {
+    transform: scale(1.1); /* Enlarges image on hover */
+}
+.card10 .description {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.6;
+}
