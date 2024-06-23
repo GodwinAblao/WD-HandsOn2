@@ -17,3 +17,83 @@ body {
     z-index: -1;
     filter: brightness(100%);
 }
+
+/* Styling for card5 */
+.card5 {
+    border-radius: 8px;
+    position: absolute;
+    top: 80px; /* Adjust according to header height */
+    left: 20px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card5 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card5 .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff00f2;
+    margin-bottom: 10px;
+}
+
+.card5 .description {
+    color: #e05ecf;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* Styling for card6 */
+.card6 {
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+    transition: transform 0.3s ease; /* Added for transform effect */
+}
+
+.card6:hover {
+    transform: scale(1.05); /* Enlarges card on hover */
+}
+
+.card6 .card-content {
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.card6 .card-content .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff00f2;
+    margin-bottom: 10px;
+}
+
+.card6 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: transform 0.3s ease; /* Added for transform effect */
+}
+
+.card6:hover .card-img {
+    transform: scale(1.1); /* Enlarges image on hover */
+}
+
+
+
+
+
+
