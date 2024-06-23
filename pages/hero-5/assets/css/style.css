@@ -44,12 +44,12 @@ body {
 .card9 .title {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .card9 .description {
-    color: #ffffff;
+    color: #000000;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -80,7 +80,7 @@ body {
 .card10 .title {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -97,7 +97,7 @@ body {
     transform: scale(1.1); /* Enlarges image on hover */
 }
 .card10 .description {
-    color: #ffffff;
+    color: #000000;
     font-size: 14px;
     line-height: 1.6;
 }
