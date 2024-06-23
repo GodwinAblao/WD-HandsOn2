@@ -17,3 +17,96 @@ body {
     z-index: -1;
     filter: brightness(100%);
 }
+
+/* Updated styles for .card9 and .card10 */
+
+.card9 {
+    background-color: #00FFFF;
+    border-radius: 8px;
+    position: absolute;
+    top: 80px; /* Adjust according to header height */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card9 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card9 .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card9 .description {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card10 {
+    background-color: #00FFFF;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    right: 50%; /* Center horizontally */
+    transform: translateX(50%); /* Center horizontally */
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures overflow does not affect animation */
+    transition: transform 0.3s ease; /* Added for transform effect */
+}
+
+.card10:hover {
+    transform: scale(1.05); /* Enlarges card on hover */
+}
+
+.card10 .card-content {
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.card10 .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card10 .card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: transform 0.3s ease; /* Added for transform effect */
+}
+
+.card10:hover .card-img {
+    transform: scale(1.1); /* Enlarges image on hover */
+}
+.card10 .description {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
